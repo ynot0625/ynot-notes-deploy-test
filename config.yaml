@@ -1,11 +1,54 @@
-baseURL: "https://example.netlify.app/"
-languageCode: "ko-kr"
-defaultContentLanguage: "ko"
-title: "Ynot Notes"
-enableRobotsTXT: true
-summaryLength: 32
+baseURL: /
+languageCode: ko-kr
+defaultContentLanguage: ko
+title: Ynot?
+theme: hugo-tranquilpeak-theme
+paginate: 7
+canonifyurls: true
 permalinks:
-  posts: "/posts/:slug/"
+  posts: /:year/:month/:slug/
+taxonomies:
+  archive: archives
+  category: categories
+  tag: tags
+  series: series
+markup:
+  tableOfContents:
+    startLevel: 1
+    endLevel: 3
+    ordered: false
+author:
+  name: Aiden
+  bio: Think of this and that
+  job: Atmospheric scientists
+  location: South Korea
+  picture: https://res.cloudinary.com/ynot-gallery/image/upload/t_media_lib_thumb/v1610528705/blog/IMG_20200614_115929_1_tizrkp.jpg
+menu:
+  links:
+    - identifier: github
+      name: GitHub
+      pre: <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      url: https://github.com/ynot0625
+      weight: 1
+  main:
+    - {identifier: home, name: Home, pre: '<i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>', url: /, weight: 1}
+    - {identifier: categories, name: Categories, pre: '<i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>', url: /categories, weight: 2}
+    - {identifier: tags, name: Tags, pre: '<i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>', url: /tags, weight: 3}
+    - {identifier: archives, name: Archives, pre: '<i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>', url: /archives, weight: 4}
+    - {identifier: about, name: About, pre: '<i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>', url: '/#about', weight: 5}
 params:
-  description: "생활과 기술을 차분하게 기록하는 개인 블로그"
-
+  description: Aiden의 기록
+  coverImage: images/cover.jpg
+  sidebarBehavior: 1
+  clearReading: true
+  hierarchicalCategories: true
+  autoThumbnailImage: true
+  thumbnailImage: true
+  thumbnailImagePosition: bottom
+  imageGallery: true
+  syntaxHighlighter: highlight.js
+  header:
+    rightLink: {class: '', icon: '', url: '/#about'}
+  comment:
+    disqus: {enable: false}
+    gitalk: {enable: false}
