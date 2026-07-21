@@ -1,0 +1,11 @@
+baseURL: "https://example.netlify.app/"
+languageCode: "ko-kr"
+defaultContentLanguage: "ko"
+title: "Ynot Notes"
+enableRobotsTXT: true
+summaryLength: 32
+permalinks:
+  posts: "/posts/:slug/"
+params:
+  description: "생활과 기술을 차분하게 기록하는 개인 블로그"
+
