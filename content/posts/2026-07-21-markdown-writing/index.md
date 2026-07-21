@@ -2,13 +2,9 @@
 title: "Markdown으로 블로그 글을 더 편하게 쓰는 방법"
 date: 2026-07-21T16:00:00+09:00
 slug: "markdown-writing-workflow"
-description: "복잡한 편집 환경 없이 Markdown과 n8n으로 글을 작성하고 검토하는 흐름을 소개합니다."
-categories:
-  - 블로그 운영
-tags:
-  - Markdown
-  - n8n
-  - 자동화
+description: "기존 테마를 유지하면서 Markdown과 n8n으로 글을 작성하고 검토하는 흐름을 소개합니다."
+categories: ["블로그 운영"]
+tags: ["Markdown", "n8n", "자동화"]
 draft: false
 ---
 
@@ -31,5 +27,4 @@ Markdown은 제목, 목록, 링크와 이미지를 간단한 문법으로 표현
 - 이미지는 글과 같은 폴더에 보관합니다.
 - 처음 생성되는 글은 `draft: true`로 설정합니다.
 
-이 구조를 사용하면 R과 Pandoc을 설치하지 않아도 Hugo만으로 빠르게 블로그를 만들 수 있습니다.
-
+이 구조를 사용하면 R과 Pandoc을 설치하지 않아도 Hugo만으로 기존 디자인의 블로그를 계속 운영할 수 있습니다.
