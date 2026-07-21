@@ -1,11 +1,10 @@
 [build]
-  command = "hugo --gc --minify"
+  command = "git clone --depth 1 https://github.com/kakawait/hugo-tranquilpeak-theme.git themes/hugo-tranquilpeak-theme && hugo"
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.148.2"
+  HUGO_VERSION = "0.80.0"
   HUGO_ENV = "production"
 
 [context.deploy-preview]
   command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
-
